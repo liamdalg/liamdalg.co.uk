@@ -3,6 +3,24 @@ module.exports = {
     title: `Liam Dalgarno`,
     description: `Personal blog built with Gatsby.`,
     author: `@liamdalg`,
+    navLinks: [
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'Blog',
+        link: '/blog',
+      },
+      {
+        name: 'Projects',
+        link: '/projects',
+      },
+      {
+        name: 'About',
+        link: '/about',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
