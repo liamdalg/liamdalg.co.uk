@@ -628,3 +628,18 @@ pre tt:after {
   color: $text-colour-light;
   text-decoration: none;
 }
+
+.absolute-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.accent-text {
+  color: $accent-colour;
+}

@@ -13,10 +13,10 @@ export default class Header extends React.Component<HeaderProps, {}> {
     return (
       <header className="main-header">
         <div
+          className="nav-container"
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0.5rem 0.5rem`,
+            padding: `2rem 0rem`,
           }}
         >
           <nav className="navbar">
@@ -29,7 +29,7 @@ export default class Header extends React.Component<HeaderProps, {}> {
             </ul>
             <ul className="nav-right">
               {this.props.navLinks.map(({ name, link }) => (
-                <li>
+                <li key={`navbar-link-${name}`}>
                   <Link
                     to={link}
                     activeClassName="nav-active"

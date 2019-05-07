@@ -29,14 +29,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
               siteTitle={data.site.siteMetadata.title}
               navLinks={data.site.siteMetadata.navLinks}
             />
-            <div
-              style={{
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `0px 1.0875rem 1.45rem`,
-                paddingTop: 0,
-              }}
-            >
+            <div>
               <main>{this.props.children}</main>
               <footer>
                 © {new Date().getFullYear()}, Built with

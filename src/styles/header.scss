@@ -1,7 +1,15 @@
 @import 'variables';
 
 .main-header {
-  background-color: $back-colour-dark;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-container {
+  width: 90%;
 }
 
 .nav-link {
@@ -15,6 +23,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  font-size: 1.25rem;
   ul {
     margin: 0;
     padding: 0;
@@ -22,7 +31,7 @@
     li {
       margin: 0;
       display: inline-block;
-      margin-right: 2rem;
+      margin-right: 4rem;
       &:last-child {
         margin-right: 0;
       }

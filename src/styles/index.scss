@@ -1,7 +1,29 @@
+@import 'variables';
+
 .title {
   color: #333;
 }
 
 .container {
   text-align: center;
+}
+
+.home-splash {
+  background-color: #161616;
+  width: 100%;
+  height: 100vh;
+}
+
+.splash-title {
+  color: $text-colour-light;
+  font-size: 3.5rem;
+}
+
+.splash-subtitle {
+  color: $text-colour-light;
+}
+
+.splash-info {
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 3rem 5rem;
 }
