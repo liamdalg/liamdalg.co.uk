@@ -22,13 +22,7 @@ export default class Header extends React.Component<HeaderProps, {}> {
           <nav className="navbar">
             <ul className="nav-left">
               <li>
-                <Link
-                  to="/"
-                  style={{
-                    color: `white`,
-                    textDecoration: `none`,
-                  }}
-                >
+                <Link to="/" className="main-link">
                   {this.props.siteTitle}
                 </Link>
               </li>
@@ -38,8 +32,8 @@ export default class Header extends React.Component<HeaderProps, {}> {
                 <li>
                   <Link
                     to={link}
-                    activeClassName="link-active"
-                    className="header-nav-link"
+                    activeClassName="nav-active"
+                    className="nav-link main-link"
                   >
                     {name}
                   </Link>
