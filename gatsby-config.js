@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    prefixPath: '/liamdalg.me',
     title: `Liam Dalgarno`,
     description: `Personal blog built with Gatsby.`,
     author: `@liamdalg`,
