@@ -33,3 +33,27 @@
   padding-top: 3rem;
   margin-bottom: 200rem;
 }
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-width: 50px 5px 5px 50px;
+  border-color: transparent #fff #fff transparent;
+  border-style: solid;
+  transform: translate(-50%) rotate(45deg);
+  bottom: 3%;
+  animation: downfade 2s linear infinite;
+}
+
+@keyframes downfade {
+  from {
+    opacity: 0.2;
+    margin-bottom: 25px;
+    margin-right: 25px;
+  }
+  to {
+    opacity: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}

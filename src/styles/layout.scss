@@ -189,6 +189,7 @@ html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: inherit;
@@ -632,6 +633,18 @@ pre tt:after {
   }
 }
 
+.absolute-centeredX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.absolute-centeredY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .absolute-centered {
   position: absolute;
   top: 50%;
@@ -645,4 +658,8 @@ pre tt:after {
 
 .accent-text {
   color: $accent-colour;
+}
+
+.clickable {
+  cursor: pointer;
 }

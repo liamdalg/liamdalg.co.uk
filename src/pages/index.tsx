@@ -37,8 +37,16 @@ class IndexPage extends React.Component<IndexProps, IndexState> {
             <h4 className="splash-subtitle">Something goes here.</h4>
           </div>
           <ParticlesJS config={DefaultConfig} />
+          <div
+            onClick={() =>
+              document
+                .querySelector('#firstContainer')
+                .scrollIntoView({ behavior: 'smooth' })
+            }
+            className="arrow-down absolute-centeredX clickable"
+          />
         </div>
-        <div className="container">
+        <div id="firstContainer" className="container">
           <h1 className="title">Hey There.</h1>
           <p>Development in progress with Gatsby + SASS + TypeScript.</p>
         </div>
