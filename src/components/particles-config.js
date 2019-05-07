@@ -8,7 +8,7 @@ export default {
       },
     },
     color: {
-      value: '#ff8c61',
+      value: '#fb713f',
     },
     shape: {
       type: 'circle',
@@ -48,7 +48,7 @@ export default {
     line_linked: {
       enable: true,
       distance: 150,
-      color: '#ff8c61',
+      color: '#fb713f',
       opacity: 0.4,
       width: 1,
     },

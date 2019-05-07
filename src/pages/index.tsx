@@ -18,7 +18,7 @@ class IndexPage extends React.Component<IndexProps, {}> {
               <span className="accent-text">l</span>iam
               <span className="accent-text">d</span>alg
             </h1>
-            <h4 className="splash-subtitle">Naïve Programmer.</h4>
+            <h4 className="splash-subtitle">Something goes here.</h4>
           </div>
           <ParticlesJS config={DefaultConfig} />
         </div>
