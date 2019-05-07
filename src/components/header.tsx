@@ -16,25 +16,37 @@ export default class Header extends React.Component<HeaderProps, {}> {
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `1rem 1rem`,
+            padding: `0.5rem 0.5rem`,
           }}
         >
-          <h4 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              {this.props.siteTitle}
-            </Link>
-          </h4>
-          {this.props.navLinks.map(({ name, link }) => (
-            <Link to={link} className="header-nav-link">
-              {name}
-            </Link>
-          ))}
+          <nav className="navbar">
+            <ul className="nav-left">
+              <li>
+                <Link
+                  to="/"
+                  style={{
+                    color: `white`,
+                    textDecoration: `none`,
+                  }}
+                >
+                  {this.props.siteTitle}
+                </Link>
+              </li>
+            </ul>
+            <ul className="nav-right">
+              {this.props.navLinks.map(({ name, link }) => (
+                <li>
+                  <Link
+                    to={link}
+                    activeClassName="link-active"
+                    className="header-nav-link"
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </header>
     );

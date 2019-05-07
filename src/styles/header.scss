@@ -9,4 +9,29 @@
 }
 
 .header-nav-link {
+  color: $text-colour-light;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.link-active {
+  border-bottom: 3px solid $accent-colour;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0;
+      display: inline-block;
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
