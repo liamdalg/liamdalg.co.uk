@@ -4,7 +4,9 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import '../styles/layout.scss';
 
-interface LayoutProps {}
+interface LayoutProps {
+  invertedHeader: boolean;
+}
 
 export default class Layout extends React.Component<LayoutProps, {}> {
   public render() {
@@ -26,6 +28,7 @@ export default class Layout extends React.Component<LayoutProps, {}> {
         render={data => (
           <>
             <Header
+              inverted={this.props.invertedHeader}
               siteTitle={data.site.siteMetadata.title}
               navLinks={data.site.siteMetadata.navLinks}
             />

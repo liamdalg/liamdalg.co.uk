@@ -4,6 +4,7 @@ import React from 'react';
 import '../styles/header.scss';
 
 interface HeaderProps {
+  inverted: boolean;
   siteTitle: string;
   navLinks: { name: string; link: string }[];
 }
@@ -22,7 +23,12 @@ export default class Header extends React.Component<HeaderProps, {}> {
           <nav className="navbar">
             <ul className="nav-left">
               <li>
-                <Link to="/" className="main-link">
+                <Link
+                  to="/"
+                  className={
+                    this.props.inverted ? 'main-link inverted' : 'main-link'
+                  }
+                >
                   {this.props.siteTitle}
                 </Link>
               </li>
@@ -33,7 +39,11 @@ export default class Header extends React.Component<HeaderProps, {}> {
                   <Link
                     to={link}
                     activeClassName="nav-active"
-                    className="nav-link main-link"
+                    className={
+                      this.props.inverted
+                        ? 'nav-link main-link inverted'
+                        : 'nav-link main-link'
+                    }
                   >
                     {name}
                   </Link>

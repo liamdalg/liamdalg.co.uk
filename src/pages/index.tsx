@@ -8,10 +8,26 @@ import '../styles/index.scss';
 
 interface IndexProps {}
 
-class IndexPage extends React.Component<IndexProps, {}> {
+interface IndexState {
+  invertedHeader: boolean;
+}
+
+class IndexPage extends React.Component<IndexProps, IndexState> {
+  state = {
+    invertedHeader: false,
+  };
+
+  public componentDidMount() {
+    window.addEventListener('scroll', () =>
+      this.setState({
+        invertedHeader: window.pageYOffset + 62 >= window.innerHeight,
+      })
+    );
+  }
+
   public render() {
     return (
-      <Layout>
+      <Layout invertedHeader={this.state.invertedHeader}>
         <div className="home-splash text-centered">
           <div className="absolute-centered splash-info">
             <h1 className="splash-title">
@@ -23,7 +39,7 @@ class IndexPage extends React.Component<IndexProps, {}> {
           <ParticlesJS config={DefaultConfig} />
         </div>
         <div className="container">
-          <h1 className="title">Hello World!</h1>
+          <h1 className="title">Hey There.</h1>
           <p>Development in progress with Gatsby + SASS + TypeScript.</p>
         </div>
       </Layout>

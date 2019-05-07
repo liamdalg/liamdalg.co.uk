@@ -627,6 +627,9 @@ pre tt:after {
 .main-link {
   color: $text-colour-light;
   text-decoration: none;
+  &.inverted {
+    color: $text-colour-dark;
+  }
 }
 
 .absolute-centered {
