@@ -14,6 +14,11 @@
   height: 100vh;
 }
 
+.particles {
+  width: 100%;
+  height: 100%;
+}
+
 .splash-title {
   color: $text-colour-light;
   font-size: 3.5rem;
@@ -35,8 +40,8 @@
 }
 
 .arrow-down {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-width: 50px 5px 5px 50px;
   border-color: transparent #fff #fff transparent;
   border-style: solid;

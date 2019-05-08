@@ -17,6 +17,6 @@ export default class Particles extends React.Component<ParticlesProps, {}> {
   }
 
   public render() {
-    return <div id="particles-js" />;
+    return <div id="particles-js" className="particles" />;
   }
 }
