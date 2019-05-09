@@ -1,9 +1,22 @@
 module.exports = {
   siteMetadata: {
-    prefixPath: '/liamdalg.me',
     title: `Liam Dalgarno`,
     description: `Personal blog built with Gatsby.`,
     author: `@liamdalg`,
+    social: [
+      {
+        name: 'github',
+        link: 'https://github.com/liamdalg',
+      },
+      {
+        name: 'linkedin',
+        link: 'https://www.linkedin.com/in/liamdalg/',
+      },
+      {
+        name: 'twitter',
+        link: 'https://twitter.com/Dalgrayno',
+      },
+    ],
     navLinks: [
       {
         name: 'Home',
@@ -46,6 +59,14 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+        },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

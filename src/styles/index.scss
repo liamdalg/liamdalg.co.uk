@@ -26,12 +26,11 @@
 
 .splash-subtitle {
   color: $text-colour-light;
-  margin-bottom: 0;
 }
 
 .splash-info {
   background-color: rgba(0, 0, 0, 0.25);
-  padding: 3rem 5rem;
+  padding: 2rem 5rem;
 }
 
 .container {
@@ -48,6 +47,15 @@
   transform: translate(-50%) rotate(45deg);
   bottom: 3%;
   animation: downfade 2s linear infinite;
+}
+
+.media-icon {
+  color: white;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  &:hover {
+    color: $accent-colour;
+  }
 }
 
 @keyframes downfade {

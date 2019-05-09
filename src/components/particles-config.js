@@ -37,7 +37,7 @@ export default {
     },
     size: {
       value: 3,
-      random: true,
+      random: false,
       anim: {
         enable: false,
         speed: 40,
