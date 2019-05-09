@@ -49,15 +49,6 @@
   animation: downfade 2s linear infinite;
 }
 
-.media-icon {
-  color: white;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  &:hover {
-    color: $accent-colour;
-  }
-}
-
 @keyframes downfade {
   from {
     opacity: 0.2;

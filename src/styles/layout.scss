@@ -663,3 +663,31 @@ pre tt:after {
 .clickable {
   cursor: pointer;
 }
+
+.footer-wrapper {
+  background-color: #212121;
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.media-icons-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.media-icon {
+  color: white;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  &:hover {
+    color: $accent-colour;
+  }
+}
+
+.footer-other {
+  text-align: center;
+  color: darken(white, 33);
+  font-size: 0.75rem;
+  & > p:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -10,6 +10,7 @@ import {
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add(faGithub);
 library.add(faLinkedin);
@@ -27,6 +28,10 @@ const Layout = ({ invertedHeader, children }) => (
               name
               link
             }
+            social {
+              name
+              link
+            }
           }
         }
       }
@@ -41,9 +46,25 @@ const Layout = ({ invertedHeader, children }) => (
         <div>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <div className="footer-wrapper">
+              <div className="media-icons-wrapper">
+                {data.site.siteMetadata.social.map(({ name, link }) => (
+                  <a
+                    className="media-icon"
+                    key={`media-icon-${name}`}
+                    href={link}
+                  >
+                    <FontAwesomeIcon width={48} icon={['fab', name]} />
+                  </a>
+                ))}
+              </div>
+              <div className="footer-other">
+                <p>liamdalg99@gmail.com</p>
+                <p>
+                  © 2019 Liam Dalgarno | Made with GatsbyJS and Github Pages.
+                </p>
+              </div>
+            </div>
           </footer>
         </div>
       </>

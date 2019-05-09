@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/index.scss';
 import loadParticles from '../components/particles';
 
@@ -50,19 +49,6 @@ class IndexPage extends React.Component {
               <span className="accent-text">d</span>alg
             </h1>
             <h4 className="splash-subtitle">Something goes here.</h4>
-            <div className="media-icons-wrapper">
-              {this.props.data.site.siteMetadata.social.map(
-                ({ name, link }) => (
-                  <a
-                    className="media-icon"
-                    key={`media-icon-${name}`}
-                    href={link}
-                  >
-                    <FontAwesomeIcon width={48} icon={['fab', name]} />
-                  </a>
-                )
-              )}
-            </div>
           </div>
           <div id="particles-js" className="particles" />
           <div
