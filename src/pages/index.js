@@ -25,12 +25,18 @@ class IndexPage extends React.Component {
     invertedHeader: false,
   };
 
+  handleScroll = () => {
+    this.setState({
+      invertedHeader: window.pageYOffset + 62 >= window.innerHeight,
+    });
+  };
+
   componentDidMount() {
-    window.addEventListener('scroll', () =>
-      this.setState({
-        invertedHeader: window.pageYOffset + 62 >= window.innerHeight,
-      })
-    );
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
