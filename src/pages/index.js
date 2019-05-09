@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import Particles from '../components/particles';
-import DefaultConfig from '../components/particles-config';
+import defaultConfig from '../components/particles-config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/index.scss';
+import loadParticles from '../components/particles';
 
 export const query = graphql`
   query IndexPageQuery {
@@ -33,6 +33,7 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    loadParticles('particles-js', defaultConfig);
   }
 
   componentWillUnmount() {
@@ -63,9 +64,7 @@ class IndexPage extends React.Component {
               )}
             </div>
           </div>
-          {typeof window !== 'undefined' && Particles && (
-            <Particles config={DefaultConfig} />
-          )}
+          <div id="particles-js" className="particles" />
           <div
             onClick={() =>
               document
