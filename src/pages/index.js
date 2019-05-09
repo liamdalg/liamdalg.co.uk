@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
-import ParticlesJS from '../components/particles';
+import Particles from '../components/particles';
 import DefaultConfig from '../components/particles-config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/index.scss';
@@ -57,7 +57,9 @@ class IndexPage extends React.Component {
               )}
             </div>
           </div>
-          <ParticlesJS config={DefaultConfig} />
+          {typeof window !== 'undefined' && Particles && (
+            <Particles config={DefaultConfig} />
+          )}
           <div
             onClick={() =>
               document
