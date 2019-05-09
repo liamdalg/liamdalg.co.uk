@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import '../styles/layout.scss';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, config } from '@fortawesome/fontawesome-svg-core';
 import {
   faGithub,
   faLinkedin,
@@ -14,6 +14,7 @@ import {
 library.add(faGithub);
 library.add(faLinkedin);
 library.add(faTwitter);
+config.autoAddCss = false;
 
 const Layout = ({ invertedHeader, children }) => (
   <StaticQuery

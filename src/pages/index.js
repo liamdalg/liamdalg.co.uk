@@ -57,7 +57,7 @@ class IndexPage extends React.Component {
                     key={`media-icon-${name}`}
                     href={link}
                   >
-                    <FontAwesomeIcon size="2x" icon={['fab', name]} />
+                    <FontAwesomeIcon width={48} icon={['fab', name]} />
                   </a>
                 )
               )}
