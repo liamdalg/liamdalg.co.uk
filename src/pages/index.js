@@ -1,17 +1,11 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import ParticlesJS from '../components/particles';
 import DefaultConfig from '../components/particles-config';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/index.scss';
-
-interface IndexProps {}
-
-interface IndexState {
-  invertedHeader: boolean;
-}
 
 export const query = graphql`
   query IndexPageQuery {
@@ -26,12 +20,12 @@ export const query = graphql`
   }
 `;
 
-class IndexPage extends React.Component<IndexProps, IndexState> {
+class IndexPage extends React.Component {
   state = {
     invertedHeader: false,
   };
 
-  public componentDidMount() {
+  componentDidMount() {
     window.addEventListener('scroll', () =>
       this.setState({
         invertedHeader: window.pageYOffset + 62 >= window.innerHeight,
@@ -39,7 +33,7 @@ class IndexPage extends React.Component<IndexProps, IndexState> {
     );
   }
 
-  public render() {
+  render() {
     return (
       <Layout invertedHeader={this.state.invertedHeader}>
         <div className="home-splash text-centered">
@@ -75,7 +69,7 @@ class IndexPage extends React.Component<IndexProps, IndexState> {
         </div>
         <div id="firstContainer" className="container">
           <h1 className="title">Hey There.</h1>
-          <p>Development in progress with Gatsby + SASS + TypeScript.</p>
+          <p>Development in progress with Gatsby.</p>
         </div>
       </Layout>
     );

@@ -1,6 +1,6 @@
 # liamdalg.me
 
-Built with GatsbyJS + TypeScript + SASS. Currently under construction!
+Built with GatsbyJS. Currently under construction!
 
 ```
                                   .-.
