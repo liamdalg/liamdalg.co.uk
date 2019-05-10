@@ -60,15 +60,26 @@ class IndexPage extends React.Component {
             className="arrow-down absolute-centeredX clickable"
           />
         </div>
-        <div id="firstContainer" className="container">
-          <h1 className="title">Hey There.</h1>
-          <p>Development in progress with Gatsby.</p>
-          <div className="home-about">
+        <div id="firstContainer" className="container home-about">
+          <h1 className="home-about-title">About Me</h1>
+          <div className="home-about-left">
             <Img
               className="rounded-image about-image"
               fluid={this.props.data.fileName.childImageSharp.fluid}
               alt="A picture of me!"
             />
+          </div>
+          <div className="home-about-right">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
+            ipsum est. Vivamus ullamcorper sem erat, eu sodales metus finibus
+            eu. Aliquam erat nunc, sagittis nec faucibus non, pulvinar a lectus.
+            Duis leo ante, tempor ut leo sit amet, luctus cursus dolor. Quisque
+            scelerisque sapien a nulla venenatis tincidunt. Quisque ac mauris a
+            justo placerat euismod at bibendum leo. Nam dapibus finibus
+            consequat. Phasellus urna mauris, efficitur et velit ac, posuere
+            congue sapien. Sed nec neque est. In consequat arcu sit amet feugiat
+            laoreet. Phasellus molestie, dolor non semper mattis, orci eros
+            semper felis, vitae feugiat dui arcu ut leo.
           </div>
         </div>
       </Layout>
