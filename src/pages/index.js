@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
@@ -7,12 +8,11 @@ import '../styles/index.scss';
 import loadParticles from '../components/particles';
 
 export const query = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        social {
-          name
-          link
+  query IndexImageQuery {
+    fileName: file(relativePath: { eq: "me.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 400, maxHeight: 400) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -63,6 +63,13 @@ class IndexPage extends React.Component {
         <div id="firstContainer" className="container">
           <h1 className="title">Hey There.</h1>
           <p>Development in progress with Gatsby.</p>
+          <div className="home-about">
+            <Img
+              className="rounded-image about-image"
+              fluid={this.props.data.fileName.childImageSharp.fluid}
+              alt="A picture of me!"
+            />
+          </div>
         </div>
       </Layout>
     );
