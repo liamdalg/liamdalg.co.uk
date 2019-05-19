@@ -7,6 +7,7 @@ import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
 import '../styles/index.scss';
 import loadParticles from '../components/particles';
+import Progress from '../components/progress';
 
 export const query = graphql`
   query IndexImageQuery {
@@ -96,7 +97,15 @@ class IndexPage extends React.Component {
           </div>
           <div className="home-about-icons">
             {skillItems.map(({ name, text, level }) => (
-              <InlineSVG key={`icon-${name}`} src={`images/${name}.svg`} />
+              <div className="dev-icon-wrapper">
+                <InlineSVG
+                  className="dev-icon"
+                  key={`icon-${name}`}
+                  src={`images/${name}.svg`}
+                />
+                <Progress className="dev-icon-progress" level={level} />
+                {/** <span className="dev-icon-text">{text}</span> */}
+              </div>
             ))}
           </div>
         </div>
