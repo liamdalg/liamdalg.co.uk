@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import InlineSVG from 'react-inlinesvg';
 
 import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
@@ -13,6 +14,15 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 400, maxHeight: 400) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        skills {
+          name
+          text
+          level
         }
       }
     }
@@ -40,6 +50,9 @@ class IndexPage extends React.Component {
   }
 
   render() {
+    const skillItems = this.props.data.site.siteMetadata.skills.sort(
+      (a, b) => b.level - a.level
+    );
     return (
       <Layout invertedHeader={this.state.invertedHeader}>
         <div className="home-splash text-centered">
@@ -80,6 +93,11 @@ class IndexPage extends React.Component {
             congue sapien. Sed nec neque est. In consequat arcu sit amet feugiat
             laoreet. Phasellus molestie, dolor non semper mattis, orci eros
             semper felis, vitae feugiat dui arcu ut leo.
+          </div>
+          <div className="home-about-icons">
+            {skillItems.map(({ name, text, level }) => (
+              <InlineSVG key={`icon-${name}`} src={`images/${name}.svg`} />
+            ))}
           </div>
         </div>
       </Layout>

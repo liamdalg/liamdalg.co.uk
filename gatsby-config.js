@@ -17,6 +17,33 @@ module.exports = {
         link: 'https://twitter.com/Dalgrayno',
       },
     ],
+    skills: [
+      {
+        name: 'react',
+        text: 'JS + React',
+        level: 0.75,
+      },
+      {
+        name: 'dot-net',
+        text: 'C# .NET',
+        level: 0.8,
+      },
+      {
+        name: 'python',
+        text: 'Python',
+        level: 1,
+      },
+      {
+        name: 'cplusplus',
+        text: 'C/C++',
+        level: 0.5,
+      },
+      {
+        name: 'html-five',
+        text: 'HTML/CSS',
+        level: 0.9,
+      },
+    ],
     navLinks: [
       {
         name: 'Home',

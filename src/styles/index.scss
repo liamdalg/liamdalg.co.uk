@@ -87,3 +87,10 @@
   grid-column-start: 2;
   grid-row-start: 2;
 }
+
+.home-about-icons {
+  fill: $accent-colour !important;
+  text-align: center;
+  grid-column: 1 / 3;
+  grid-row-start: 3;
+}
