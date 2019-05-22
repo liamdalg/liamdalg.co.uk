@@ -62,7 +62,7 @@ class IndexPage extends React.Component {
           />
         </div>
         <div id="firstContainer" className="container home-about">
-          <h1 className="home-about-title">About Me</h1>
+          <h1 className="container-title">About Me</h1>
           <div className="home-about-left">
             <Img
               className="rounded-image about-image"
@@ -96,8 +96,12 @@ class IndexPage extends React.Component {
             ))}
           </div>
         </div>
-        <div className="container home-projects">Projects</div>
-        <div className="container home-projects">Recent Blog Posts</div>
+        <div className="container home-projects">
+          <h1 className="container-title">Projects</h1>
+        </div>
+        <div className="container home-projects">
+          <h1 className="container-title">Recent Blog Posts</h1>
+        </div>
       </Layout>
     );
   }
