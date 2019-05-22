@@ -57,10 +57,6 @@ module.exports = {
         name: 'Projects',
         link: '/projects',
       },
-      {
-        name: 'CV',
-        link: '/cv',
-      },
     ],
   },
   plugins: [

@@ -38,6 +38,15 @@ const Header = ({ inverted, siteTitle, navLinks }) => (
               </Link>
             </li>
           ))}
+          <a
+            href="/cv-pub.pdf"
+            target="_blank"
+            className={
+              inverted ? 'nav-link main-link inverted' : 'nav-link main-link'
+            }
+          >
+            CV
+          </a>
         </ul>
       </nav>
     </div>
