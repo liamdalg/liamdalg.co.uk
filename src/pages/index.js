@@ -62,7 +62,9 @@ class IndexPage extends React.Component {
               <span className="accent-text">l</span>iam
               <span className="accent-text">d</span>alg
             </h1>
-            <h4 className="splash-subtitle">Something goes here.</h4>
+            <h4 className="splash-subtitle">
+              Under construction! (My CV works though)
+            </h4>
           </div>
           <div id="particles-js" className="particles" />
           <div
