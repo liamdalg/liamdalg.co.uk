@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 import '../styles/header.scss';
 
-const Header = ({ inverted, siteTitle, navLinks }) => (
+const Header = ({ siteTitle, navLinks }) => (
   <header className="main-header">
     <div
       className="nav-container"
@@ -14,10 +14,7 @@ const Header = ({ inverted, siteTitle, navLinks }) => (
       <nav className="navbar">
         <ul className="nav-left">
           <li>
-            <Link
-              to="/"
-              className={inverted ? 'main-link inverted' : 'main-link'}
-            >
+            <Link to="/" className="main-link">
               {siteTitle}
             </Link>
           </li>
@@ -28,23 +25,13 @@ const Header = ({ inverted, siteTitle, navLinks }) => (
               <Link
                 to={link}
                 activeClassName="nav-active"
-                className={
-                  inverted
-                    ? 'nav-link main-link inverted'
-                    : 'nav-link main-link'
-                }
+                className="nav-link main-link"
               >
                 {name}
               </Link>
             </li>
           ))}
-          <a
-            href="/cv-pub.pdf"
-            target="_blank"
-            className={
-              inverted ? 'nav-link main-link inverted' : 'nav-link main-link'
-            }
-          >
+          <a href="/cv-pub.pdf" target="_blank" className="nav-link main-link">
             CV
           </a>
         </ul>

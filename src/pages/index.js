@@ -31,23 +31,8 @@ export const query = graphql`
 `;
 
 class IndexPage extends React.Component {
-  state = {
-    invertedHeader: false,
-  };
-
-  handleScroll = () => {
-    this.setState({
-      invertedHeader: window.pageYOffset + 62 >= window.innerHeight,
-    });
-  };
-
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
     loadParticles('particles-js', defaultConfig);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
@@ -55,7 +40,7 @@ class IndexPage extends React.Component {
       (a, b) => b.level - a.level
     );
     return (
-      <Layout invertedHeader={this.state.invertedHeader}>
+      <Layout>
         <div className="home-splash text-centered">
           <div className="absolute-centered splash-info">
             <h1 className="splash-title">
@@ -111,6 +96,8 @@ class IndexPage extends React.Component {
             ))}
           </div>
         </div>
+        <div className="container home-projects">Projects</div>
+        <div className="container home-projects">Recent Blog Posts</div>
       </Layout>
     );
   }

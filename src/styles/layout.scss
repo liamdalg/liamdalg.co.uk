@@ -695,7 +695,7 @@ pre tt:after {
 
 .container {
   max-width: $max-container-width;
-  min-height: 960px; // TODO: make height for containers more dynamic
+  height: 720px; // TODO: make height for containers more dynamic
   margin: 0 auto;
   display: grid;
   align-items: center;
