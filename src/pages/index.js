@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import InlineSVG from 'react-inlinesvg';
 
 import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
@@ -81,19 +80,6 @@ class IndexPage extends React.Component {
             congue sapien. Sed nec neque est. In consequat arcu sit amet feugiat
             laoreet. Phasellus molestie, dolor non semper mattis, orci eros
             semper felis, vitae feugiat dui arcu ut leo.
-          </div>
-          <div className="home-about-icons">
-            {skillItems.map(({ name, text, level }) => (
-              <div className="dev-icon-wrapper">
-                <InlineSVG
-                  className="dev-icon"
-                  key={`icon-${name}`}
-                  src={`images/${name}.svg`}
-                />
-                <Progress className="dev-icon-progress" level={level} />
-                {/** <span className="dev-icon-text">{text}</span> */}
-              </div>
-            ))}
           </div>
         </div>
         <div className="container home-projects">
