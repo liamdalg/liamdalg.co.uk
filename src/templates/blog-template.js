@@ -1,9 +1,10 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
 const Template = ({ data }) => {
-  const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  console.log(data);
+  const { markdownRemark } = data;
+  const { frontmatter, html } = markdownRemark;
   return (
     <div className="blog-post-container">
       <div className="blog-post">
@@ -15,20 +16,19 @@ const Template = ({ data }) => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+export const query = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        path
         title
+        date
       }
     }
   }
-`
+`;
 
 export default Template;

@@ -6,7 +6,6 @@ import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
 import '../styles/index.scss';
 import loadParticles from '../components/particles';
-import Progress from '../components/progress';
 
 export const query = graphql`
   query IndexImageQuery {
@@ -35,9 +34,6 @@ class IndexPage extends React.Component {
   }
 
   render() {
-    const skillItems = this.props.data.site.siteMetadata.skills.sort(
-      (a, b) => b.level - a.level
-    );
     return (
       <Layout>
         <div className="home-splash text-centered">

@@ -1,7 +1,6 @@
 ---
-path: "/blog/hello-world"
-date: "2019-06-01"
-title: "Hello World!"
+date: '2019-06-01'
+title: 'Hello World!'
 ---
 
 # Title
@@ -25,10 +24,10 @@ int main() {
 }
 ```
 
-Here is some text. **Here is some BOLD text**. *Now in italics*. Wow! `2 + 2 = 4`
+Here is some text. **Here is some BOLD text**. _Now in italics_. Wow! `2 + 2 = 4`
 
-* Bullet
-* Another
+- Bullet
+- Another
 
 Something
 
