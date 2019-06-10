@@ -1,21 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 const Template = ({ data }) => {
   console.log(data);
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+  const title = (
+    <div className="text-centered absolute-centered main-link">
+      <h1>{frontmatter.title}</h1>
+      <h3>{frontmatter.date}</h3>
     </div>
+  );
+  return (
+    <Layout banner={title} bannerHeight="400px">
+      <div className="blog-post-container">
+        <div className="blog-post">
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+      </div>
+    </Layout>
   );
 };
 

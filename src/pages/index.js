@@ -34,28 +34,27 @@ class IndexPage extends React.Component {
   }
 
   render() {
-    return (
-      <Layout>
-        <div className="home-splash text-centered">
-          <div className="absolute-centered splash-info">
-            <h1 className="splash-title">
-              <span className="accent-text">l</span>iam
-              <span className="accent-text">d</span>alg
-            </h1>
-            <h4 className="splash-subtitle">
-              Under construction! (My CV works though)
-            </h4>
-          </div>
-          <div id="particles-js" className="particles" />
-          <div
-            onClick={() =>
-              document
-                .querySelector('#firstContainer')
-                .scrollIntoView({ behavior: 'smooth' })
-            }
-            className="arrow-down absolute-centeredX clickable"
-          />
+    const splash = (
+      <div className="text-centered">
+        <div className="absolute-centered splash-info">
+          <h1 className="splash-title">
+            <span className="accent-text">l</span>iam
+            <span className="accent-text">d</span>alg
+          </h1>
+          <h4 className="splash-subtitle">Under construction!</h4>
         </div>
+        <div
+          onClick={() =>
+            document
+              .querySelector('#firstContainer')
+              .scrollIntoView({ behavior: 'smooth' })
+          }
+          className="arrow-down absolute-centeredX clickable"
+        />
+      </div>
+    );
+    return (
+      <Layout bannerHeight="100vh" banner={splash}>
         <div id="firstContainer" className="container home-about">
           <h1 className="container-title">About Me</h1>
           <div className="home-about-left">
