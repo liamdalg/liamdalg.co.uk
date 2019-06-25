@@ -693,14 +693,16 @@ pre tt:after {
   }
 }
 
-.container {
-  max-width: $max-container-width;
-  height: 720px; // TODO: make height for containers more dynamic
-  margin: 0 auto;
-  display: grid;
-  align-items: center;
-}
-
 .progress-bar-wrapper {
   display: inline-block;
+}
+
+.err-splash {
+  color: $text-colour-light;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 2rem 5rem;
+  & > :last-child {
+    margin: 0;
+  }
 }
