@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import defaultConfig from '../components/particles-config';
 import '../styles/index.scss';
 import loadParticles from '../components/particles';
+import SEO from '../components/seo';
 
 export const query = graphql`
   query IndexImageQuery {
@@ -55,6 +56,7 @@ class IndexPage extends React.Component {
     );
     return (
       <Layout bannerHeight="100vh" banner={splash}>
+        <SEO title="Home" />
         <div id="firstContainer" className="container home-about">
           <h1 className="container-title">About Me</h1>
           <div className="home-about-left">

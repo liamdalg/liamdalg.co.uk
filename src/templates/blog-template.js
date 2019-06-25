@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const Template = ({ data }) => {
   const { markdownRemark } = data;
@@ -13,6 +14,7 @@ const Template = ({ data }) => {
   );
   return (
     <Layout banner={title} bannerHeight="400px">
+      <SEO title={`${frontmatter.title}`} />
       <div className="blog-post-container">
         <div className="blog-post">
           <div

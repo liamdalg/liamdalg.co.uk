@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Liam Dalgarno`,
+    title: `liamdalg`,
     description: `Personal blog built with Gatsby.`,
     author: `@liamdalg`,
     social: [
@@ -83,7 +83,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: '`',
               aliases: {},
               showLineNumbers: false,
