@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/layout';
-import '../styles/blog.scss';
 import SEO from '../components/seo';
 
 const Blog = () => {
@@ -10,7 +9,7 @@ const Blog = () => {
     </div>
   );
   return (
-    <Layout banner={banner} bannerHeight="300px">
+    <Layout banner={banner} bannerHeight="400px">
       <SEO title="Projects" />
     </Layout>
   );
