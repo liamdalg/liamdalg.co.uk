@@ -9,7 +9,7 @@ const Blog = () => {
     </div>
   );
   return (
-    <Layout banner={banner} bannerHeight="400px">
+    <Layout banner={banner} bannerHeight="200px">
       <SEO title="Projects" />
     </Layout>
   );
