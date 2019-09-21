@@ -1,9 +1,9 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import Particles from 'react-particles-js';
 
 import Header from './header';
 import '../styles/layout.scss';
-import loadParticles from '../components/particles';
 import defaultConfig from '../components/particles-config';
 
 import { library, config } from '@fortawesome/fontawesome-svg-core';
@@ -20,10 +20,6 @@ library.add(faTwitter);
 config.autoAddCss = false;
 
 class Layout extends React.Component {
-  componentDidMount() {
-    loadParticles('particles-js', defaultConfig);
-  }
-
   render() {
     return (
       <StaticQuery
@@ -60,7 +56,7 @@ class Layout extends React.Component {
                 }}
               >
                 {this.props.banner}
-                <div id="particles-js" className="particles" />
+                <Particles className="particles" params={defaultConfig} />
               </div>
               <main>{this.props.children}</main>
               <footer>
