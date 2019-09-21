@@ -3,9 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
-import defaultConfig from '../components/particles-config';
 import '../styles/index.scss';
-import loadParticles from '../components/particles';
 import SEO from '../components/seo';
 
 export const query = graphql`
@@ -30,10 +28,6 @@ export const query = graphql`
 `;
 
 class IndexPage extends React.Component {
-  componentDidMount() {
-    loadParticles('particles-js', defaultConfig);
-  }
-
   render() {
     const splash = (
       <div className="text-centered">
