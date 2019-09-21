@@ -1,0 +1,9 @@
+@import 'variables';
+
+.blog-post-title {
+  text-align: center;
+  & > a {
+    text-decoration: none;
+    color: $text-colour-dark;
+  }
+}

@@ -3,6 +3,8 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+import '../styles/blog.scss';
+
 const Blog = ({ data }) => {
   const edges = data.allMarkdownRemark.edges;
   console.log(edges);
@@ -12,14 +14,20 @@ const Blog = ({ data }) => {
     </div>
   );
   return (
-    <Layout banner={banner} bannerHeight="400px">
+    <Layout banner={banner} bannerHeight="200px">
       <SEO title="Blog" />
-      {edges.map(edge => (
-        <div>
-          <Link to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
-          <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
-        </div>
-      ))}
+      <div className="container">
+        {edges.map(edge => (
+          <div>
+            <h1 className="blog-post-title">
+              <Link to={edge.node.fields.slug}>
+                {edge.node.frontmatter.title}
+              </Link>
+            </h1>
+            <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
+          </div>
+        ))}
+      </div>
     </Layout>
   );
 };
