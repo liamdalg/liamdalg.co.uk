@@ -14,7 +14,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /particles.js/,
+            test: /\.[ts|js]$/,
+            include: [
+              path.resolve(__dirname, 'node_modules/react-particles-js/lib'),
+            ],
             use: loaders.null(),
           },
         ],
