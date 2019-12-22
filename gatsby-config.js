@@ -14,7 +14,7 @@ module.exports = {
       },
       {
         name: 'twitter',
-        link: 'https://twitter.com/Dalgrayno',
+        link: 'https://twitter.com/liamdalg_',
       },
     ],
     skills: [

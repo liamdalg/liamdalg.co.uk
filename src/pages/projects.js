@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 const Blog = () => {
   const banner = (
     <div className="text-centered absolute-centered main-link">
-      <h1>Projects</h1>
+      <h1 className="banner-title">Projects</h1>
     </div>
   );
   return (

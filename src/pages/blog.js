@@ -10,7 +10,7 @@ const Blog = ({ data }) => {
   console.log(edges);
   const banner = (
     <div className="text-centered absolute-centered main-link">
-      <h1>Blog</h1>
+      <h1 className="banner-title">Blog</h1>
     </div>
   );
   return (
