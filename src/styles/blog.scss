@@ -1,9 +1,24 @@
 @import 'variables';
 
-.blog-post-title {
+.blog-grid-title {
   text-align: center;
+  margin: 0.5rem;
   & > a {
     text-decoration: none;
     color: $text-colour-dark;
   }
+}
+
+.blog-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.blog-grid-container {
+  margin: 0 1rem;
+}
+
+.blog-grid-description {
+  font-size: 0.8rem;
 }

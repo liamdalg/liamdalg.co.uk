@@ -1,6 +1,7 @@
 ---
 date: '2019-06-01'
 title: 'Hello World!'
+description: 'An example post. This is the first one on my blog!'
 ---
 
 # Title

@@ -8,7 +8,7 @@ const Header = ({ siteTitle, navLinks }) => (
       className="nav-container"
       style={{
         margin: `0 auto`,
-        padding: `2rem 0rem`,
+        padding: `1rem 0rem`,
       }}
     >
       <nav className="navbar">

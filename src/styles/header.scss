@@ -1,8 +1,9 @@
 @import 'variables';
 
 .main-header {
-  background-color: transparent;
-  position: absolute;
+  background-color: #161616;
+  // position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   overflow: hidden;

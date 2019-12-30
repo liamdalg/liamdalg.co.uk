@@ -56,7 +56,7 @@ class Layout extends React.Component {
                 }}
               >
                 {this.props.banner}
-                <Particles className="particles" params={defaultConfig} />
+                {!this.props.noParticles && <Particles className="particles" params={defaultConfig} />}
               </div>
               <main>{this.props.children}</main>
               <footer>

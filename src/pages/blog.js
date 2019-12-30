@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import '../styles/blog.scss';
 
 const Blog = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges;
+  const edges = [...data.allMarkdownRemark.edges, ...data.allMarkdownRemark.edges, ...data.allMarkdownRemark.edges];
   console.log(edges);
   const banner = (
     <div className="text-centered absolute-centered main-link">
@@ -17,16 +17,20 @@ const Blog = ({ data }) => {
     <Layout banner={banner} bannerHeight="200px">
       <SEO title="Blog" />
       <div className="container">
-        {edges.map(edge => (
-          <div>
-            <h1 className="blog-post-title">
-              <Link to={edge.node.fields.slug}>
-                {edge.node.frontmatter.title}
-              </Link>
-            </h1>
-            <p dangerouslySetInnerHTML={{ __html: edge.node.excerpt }} />
-          </div>
-        ))}
+        <div className="blog-grid">
+          {edges.map(edge => (
+            <div className="blog-grid-container">
+              <h4 className="blog-grid-title">
+                <Link to={edge.node.fields.slug}>
+                  {edge.node.frontmatter.title}
+                </Link>
+              </h4>
+              <p className="blog-grid-description">
+                {edge.node.frontmatter.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   );
@@ -37,10 +41,10 @@ export const query = graphql`
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(format: HTML, pruneLength: 200)
           frontmatter {
             title
             date
+            description
           }
           fields {
             slug
