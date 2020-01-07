@@ -45,6 +45,7 @@ class Layout extends React.Component {
             <Header
               siteTitle={data.site.siteMetadata.title}
               navLinks={data.site.siteMetadata.navLinks}
+              noSpacer={this.props.noSpacer}
             />
             <div>
               <div

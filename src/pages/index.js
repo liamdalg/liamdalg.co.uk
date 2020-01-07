@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
       </div>
     );
     return (
-      <Layout bannerHeight="100vh" banner={splash}>
+      <Layout bannerHeight="100vh" noSpacer banner={splash}>
         <SEO title="Home" />
         <div id="firstContainer" className="container home-about">
           <h1 className="container-title">About Me</h1>

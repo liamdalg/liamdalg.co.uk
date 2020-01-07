@@ -20,11 +20,11 @@ const Blog = ({ data }) => {
         <div className="blog-grid">
           {edges.map(edge => (
             <div className="blog-grid-container">
-              <h4 className="blog-grid-title">
+              <h3 className="blog-grid-title">
                 <Link to={edge.node.fields.slug}>
                   {edge.node.frontmatter.title}
                 </Link>
-              </h4>
+              </h3>
               <p className="blog-grid-description">
                 {edge.node.frontmatter.description}
               </p>
