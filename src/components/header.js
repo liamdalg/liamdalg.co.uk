@@ -4,7 +4,9 @@ import '../styles/header.scss';
 
 const Header = ({ siteTitle, navLinks, noSpacer }) => (
   <>
-    {!noSpacer && <div style={{ height: "62.1px" }}> </div>}
+    {!noSpacer && (
+      <div className="nav-container nav-placeholder">liamdalg placeholder</div>
+    )}
     <header className="main-header">
       <div
         className="nav-container"
@@ -33,9 +35,13 @@ const Header = ({ siteTitle, navLinks, noSpacer }) => (
                 </Link>
               </li>
             ))}
-            <a href="/cv-pub.pdf" target="_blank" className="nav-link main-link">
+            <a
+              href="/cv-pub.pdf"
+              target="_blank"
+              className="nav-link main-link"
+            >
               CV
-          </a>
+            </a>
           </ul>
         </nav>
       </div>

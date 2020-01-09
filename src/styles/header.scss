@@ -10,8 +10,15 @@
   z-index: 10;
 }
 
+.nav-placeholder {
+  color: transparent;
+}
+
 .nav-container {
   width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+  font-size: 1.1rem;
 }
 
 .nav-link {
@@ -25,7 +32,6 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  font-size: 1.25rem;
   ul {
     margin: 0;
     padding: 0;
