@@ -2,19 +2,12 @@
 date: '2019-06-01'
 title: 'Hello World!'
 description: 'An example post. This is the first one on my blog!'
+header:
 ---
 
-# Title
+# Introduction
 
-## Title
-
-### Title
-
-#### Title
-
-##### Title
-
-###### Title
+This is some filler text, written in Markdown. It has been transformed into nice HTML with `gatsby-transformer-remark`, alongside some other plugins. Look, some code!
 
 ```C
 #include <stdio.h>
@@ -25,12 +18,13 @@ int main() {
 }
 ```
 
-Here is some text. **Here is some BOLD text**. _Now in italics_. Wow! `2 + 2 = 4`
+## Subheading
 
-- Bullet
-- Another
+Some regular old boring text. How about _italics_? Or **bold text**?
 
-Something
+We can even write equations such as $x^2 = 1$, powered by KaTeX!
 
-1. Number
-1. Another
+$$
+a \wedge b \implies c \iff f \vee g \\~\\
+\sum_n^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
+$$

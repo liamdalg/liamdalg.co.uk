@@ -56,11 +56,18 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
+              pedantic: true,
               classPrefix: 'language-',
               inlineCodeMarker: '`',
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              strict: false,
             },
           },
         ],
