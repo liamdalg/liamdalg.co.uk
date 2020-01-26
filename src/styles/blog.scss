@@ -1,7 +1,6 @@
 @import 'variables';
 
 .blog-grid-title {
-  text-align: center;
   margin: 0.5rem;
   & > a {
     text-decoration: none;
@@ -13,6 +12,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  text-align: center;
 }
 
 .blog-grid-container {
