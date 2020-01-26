@@ -15,15 +15,6 @@ export const query = graphql`
         }
       }
     }
-    site {
-      siteMetadata {
-        skills {
-          name
-          text
-          level
-        }
-      }
-    }
   }
 `;
 
