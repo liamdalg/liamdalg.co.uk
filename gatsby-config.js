@@ -70,6 +70,13 @@ module.exports = {
               strict: false,
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 960,
+              backgroundColor: 'transparent',
+            },
+          },
         ],
       },
     },

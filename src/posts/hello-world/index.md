@@ -28,3 +28,7 @@ $$
 a \wedge b \implies c \iff f \vee g \\~\\
 \sum_n^\infty \frac{1}{n^2} = \frac{\pi^2}{6}
 $$
+
+Finally, an image loaded with `Sharp`:
+
+![Example Picture](gatsby-astronaut.png)
