@@ -18,7 +18,7 @@
   width: 90%;
   margin: 0 auto;
   padding: 1rem 0rem;
-  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .nav-link {
@@ -44,5 +44,23 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+.nav-right-collapsed {
+  color: white;
+  display: none;
+}
+
+.nav-right-button {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-right-collapsed {
+    display: inline-block;
   }
 }
