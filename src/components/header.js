@@ -42,13 +42,6 @@ const Header = ({ siteTitle, navLinks, noSpacer }) => (
                 </Link>
               </li>
             ))}
-            <a
-              href="/cv-pub.pdf"
-              target="_blank"
-              className="nav-link main-link"
-            >
-              CV
-            </a>
           </ul>
           <ul className="nav-right-collapsed">
             <li className="nav-right-button">
