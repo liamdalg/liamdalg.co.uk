@@ -20,7 +20,7 @@ const Template = ({ data }) => {
       <div className="blog-post-container">
         <div className="blog-post">
           <div
-            className="blog-post-content body-text"
+            className="blog-post-content spaced-text justified-text"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>

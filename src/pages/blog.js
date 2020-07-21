@@ -19,13 +19,13 @@ const Blog = ({ data }) => {
         <div className="blog-grid">
           {data.allMarkdownRemark.edges.map(edge => (
             <div className="blog-grid-container">
-              <h3 className="blog-grid-title">
+              <h2 className="blog-grid-title">
                 <Link to={edge.node.fields.slug}>
                   {edge.node.frontmatter.title}
                 </Link>
-              </h3>
+              </h2>
               <p
-                className="blog-grid-description"
+                className="blog-grid-description spaced-text"
                 dangerouslySetInnerHTML={{
                   __html: edge.node.frontmatter.description,
                 }}

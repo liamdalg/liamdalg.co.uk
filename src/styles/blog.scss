@@ -11,7 +11,7 @@
 
 .blog-grid {
   display: grid;
-  align-items: center;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   text-align: center;
 }
@@ -21,5 +21,6 @@
 }
 
 .blog-grid-description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin: 0;
 }
