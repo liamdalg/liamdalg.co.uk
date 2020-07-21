@@ -51,7 +51,7 @@ class IndexPage extends React.Component {
               alt="A picture of me!"
             />
           </div>
-          <div className="home-about-right">
+          <div className="home-about-right body-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
             ipsum est. Vivamus ullamcorper sem erat, eu sodales metus finibus
             eu. Aliquam erat nunc, sagittis nec faucibus non, pulvinar a lectus.
