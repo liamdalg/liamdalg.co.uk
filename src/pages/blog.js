@@ -8,16 +8,14 @@ import '../styles/blog.scss';
 const Blog = ({ data }) => {
   // const edges = [...data.allMarkdownRemark.edges];
   const banner = (
-    <div className="text-centered">
-      <div className="absolute-centered splash-info">
-        <h1 className="splash-title">
-          <span className="accent-text">B</span>log
-        </h1>
-      </div>
+    <div className="text-centered absolute-centered">
+      <h1 className="splash-title text-shadow">
+        <span className="accent-text">B</span>log
+      </h1>
     </div>
   );
   return (
-    <Layout banner={banner} noSpacer bannerHeight="250px">
+    <Layout banner={banner} bannerHeight="250px">
       <SEO title="Blog" />
       <div className="container">
         <div className="blog-grid">

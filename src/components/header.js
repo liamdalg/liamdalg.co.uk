@@ -9,11 +9,8 @@ import '../styles/header.scss';
 
 library.add(faBars);
 
-const Header = ({ siteTitle, navLinks, noSpacer }) => (
+const Header = ({ siteTitle, navLinks }) => (
   <>
-    {!noSpacer && (
-      <div className="nav-container nav-placeholder">liamdalg placeholder</div>
-    )}
     <header className="main-header">
       <div
         className="nav-container"

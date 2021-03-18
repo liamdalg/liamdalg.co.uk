@@ -25,17 +25,15 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => {
   const splash = (
-    <div className="text-centered">
-      <div className="absolute-centered splash-info">
-        <h1 className="splash-title">
-          <span className="accent-text">l</span>iam
-          <span className="accent-text">d</span>alg
-        </h1>
-      </div>
+    <div className="text-centered absolute-centered">
+      <h1 className="splash-title text-shadow">
+        <span className="accent-text">l</span>iam
+        <span className="accent-text">d</span>alg
+      </h1>
     </div>
   );
   return (
-    <Layout bannerHeight="250px" noSpacer banner={splash}>
+    <Layout bannerHeight="250px" banner={splash}>
       <SEO title="Home" />
       <div className="container">
         <h1 className="container-title">About Me</h1>

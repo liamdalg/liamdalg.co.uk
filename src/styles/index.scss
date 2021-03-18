@@ -26,11 +26,6 @@
   margin-bottom: 1rem;
 }
 
-.splash-info {
-  background-color: rgba(0, 0, 0, 0.25);
-  padding: 1rem 3rem;
-}
-
 .arrow-down {
   width: 0;
   height: 0;
@@ -52,6 +47,10 @@
   max-width: 200px;
   max-height: 200px;
   margin: 0 auto;
+}
+
+.text-shadow {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes downfade {

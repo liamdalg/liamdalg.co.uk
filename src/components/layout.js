@@ -45,7 +45,6 @@ class Layout extends React.Component {
             <Header
               siteTitle={data.site.siteMetadata.title}
               navLinks={data.site.siteMetadata.navLinks}
-              noSpacer={this.props.noSpacer}
             />
             <div>
               <div
@@ -57,7 +56,9 @@ class Layout extends React.Component {
                 }}
               >
                 {this.props.banner}
-                {!this.props.noParticles && <Particles className="particles" params={defaultConfig} />}
+                {!this.props.noParticles && (
+                  <Particles className="particles" params={defaultConfig} />
+                )}
               </div>
               <main>{this.props.children}</main>
               <footer>
