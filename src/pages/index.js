@@ -80,9 +80,6 @@ const IndexPage = ({ data }) => {
           ))}
         </ul>
       </div>
-      <div className="container home-projects">
-        <h1 className="container-title">Projects</h1>
-      </div>
     </Layout>
   );
 };

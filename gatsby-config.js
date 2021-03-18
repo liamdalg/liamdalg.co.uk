@@ -26,10 +26,6 @@ module.exports = {
         name: 'Blog',
         link: '/blog',
       },
-      {
-        name: 'Projects',
-        link: '/projects',
-      },
     ],
   },
   plugins: [
