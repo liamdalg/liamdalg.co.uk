@@ -2,7 +2,7 @@
 @import '~katex/dist/katex.css';
 
 .blog-grid-title {
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   & > a {
     text-decoration: none;
     color: $text-colour-dark;
@@ -12,12 +12,13 @@
 .blog-grid {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  text-align: left;
 }
 
 .blog-grid-container {
-  margin: 0 1rem;
 }
 
 .blog-grid-description {
