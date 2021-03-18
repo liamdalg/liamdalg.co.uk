@@ -31,22 +31,13 @@ const IndexPage = ({ data }) => {
           <span className="accent-text">l</span>iam
           <span className="accent-text">d</span>alg
         </h1>
-        <h4 className="splash-subtitle">Under construction!</h4>
       </div>
-      <div
-        onClick={() =>
-          document
-            .querySelector('#firstContainer')
-            .scrollIntoView({ behavior: 'smooth' })
-        }
-        className="arrow-down absolute-centeredX clickable"
-      />
     </div>
   );
   return (
-    <Layout bannerHeight="100vh" noSpacer banner={splash}>
+    <Layout bannerHeight="250px" noSpacer banner={splash}>
       <SEO title="Home" />
-      <div id="firstContainer" className="container home-about">
+      <div className="container">
         <h1 className="container-title">About Me</h1>
         <div className="span-container justified-text spaced-text">
           <p>
@@ -70,7 +61,7 @@ const IndexPage = ({ data }) => {
           </p>
         </div>
       </div>
-      <div className="container home-projects">
+      <div className="container">
         <h1 className="container-title">Recent Blog Posts</h1>
         <ul class="span-container">
           {data.allMarkdownRemark.nodes.map(node => (
