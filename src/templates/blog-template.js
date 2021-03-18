@@ -15,7 +15,7 @@ const Template = ({ data }) => {
     </div>
   );
   return (
-    <Layout banner={title} bannerHeight="300px">
+    <Layout banner={title} bannerHeight="250px">
       <SEO title={`${frontmatter.title}`} />
       <div className="blog-post-container container">
         <div className="blog-post">
