@@ -12,11 +12,16 @@ This is some filler text, written in Markdown. It has been transformed into nice
 ```C{numberLines: true}
 #include <stdio.h>
 
+int square(int x) {
+  return x * x;
+}
+
 int main() {
-  printf("Hello World!");
-  if (0 == 1) {
-    return -1;
-  }
+  printf("Hello World!\n");
+  printf("This is some example code highlighting in C!\n");
+
+  int result = square(15);
+  printf("15 squared is equal to %i!\n", result);
   return 0;
 }
 ```
