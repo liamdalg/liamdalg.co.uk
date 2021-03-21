@@ -258,11 +258,13 @@ h6 {
   line-height: 1.1;
 }
 
+pre,
 code {
   font-family: 'Fira Code', Courier, monospace !important;
 }
 
 @supports (font-variation-settings: normal) {
+  pre,
   code {
     font-family: 'Fira Code VF', monospace !important;
   }
