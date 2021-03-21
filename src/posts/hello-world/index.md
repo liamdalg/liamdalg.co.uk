@@ -9,7 +9,7 @@ header:
 
 This is some filler text, written in Markdown. It has been transformed into nice HTML with `gatsby-transformer-remark`, alongside some other plugins. Look, some code!
 
-```C
+```C{numberLines: true}
 #include <stdio.h>
 
 int main() {
