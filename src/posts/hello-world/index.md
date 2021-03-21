@@ -14,9 +14,14 @@ This is some filler text, written in Markdown. It has been transformed into nice
 
 int main() {
   printf("Hello World!");
+  if (0 == 1) {
+    return -1;
+  }
   return 0;
 }
 ```
+
+`C›int x = 5;`
 
 ## Subheading
 

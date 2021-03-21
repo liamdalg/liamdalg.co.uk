@@ -54,7 +54,7 @@ module.exports = {
             options: {
               pedantic: true,
               classPrefix: 'language-',
-              inlineCodeMarker: '`',
+              inlineCodeMarker: '›',
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
