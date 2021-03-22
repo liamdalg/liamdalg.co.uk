@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import '../styles/index.scss';
@@ -37,31 +36,38 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <div className="container">
         <h1 className="container-title">About Me</h1>
-        <div className="span-container justified-text spaced-text">
+        <div className="container-body justified-text spaced-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a
-            ipsum est. Vivamus ullamcorper sem erat, eu sodales metus finibus
-            eu. Aliquam erat nunc, sagittis nec faucibus non, pulvinar a lectus.
-            Duis leo ante, tempor ut leo sit amet, luctus cursus dolor. Quisque
-            scelerisque sapien a nulla venenatis tincidunt. Quisque ac mauris a
-            justo placerat euismod at bibendum leo. Nam dapibus finibus
-            consequat. Phasellus urna mauris, efficitur et velit ac, posuere
-            congue sapien. Sed nec neque est. In consequat arcu sit amet feugiat
-            laoreet. Phasellus molestie, dolor non semper mattis, orci eros
-            semper felis, vitae feugiat dui arcu ut leo.
+            Hey, I'm Liam. I'm a fourth year student at the University of
+            Bristol studying Computer Science. I'm interested in a pretty much
+            anything related to Mathematics, Computer Science, and Physics...
+            but especially quantum computation, machine learning, and cyber
+            security. I also like Team Fortress 2, photography, guitar, and
+            Joywave.
           </p>
           <p>
-            Fusce sagittis nulla sit amet posuere dapibus. Praesent facilisis
-            elementum orci ac sollicitudin. Quisque quis posuere mauris. Donec
-            tristique justo id tellus convallis auctor. Vivamus a consequat
-            risus. Sed ipsum nunc, hendrerit ac suscipit in, iaculis sit amet
-            purus. Nullam nec nisi ac diam consectetur molestie a ac sem.
+            I originally made this website with the intention of writing about
+            programming and things I find interesting. Well, two years later and
+            it's still not done, but I get closer every few months!
           </p>
+          <strong>
+            I'm currently searching for internships & research positions related
+            to quantum computation. If you've somehow found your way here and
+            are interested please get in touch!
+          </strong>
+        </div>
+      </div>
+      <div className="container">
+        <h1 className="container-title">Experience</h1>
+        <div className="container-body justified-text spaced-text">
+          <ul>
+            <li>Some stuff I did</li>
+          </ul>
         </div>
       </div>
       <div className="container">
         <h1 className="container-title">Recent Blog Posts</h1>
-        <ul class="span-container">
+        <ul>
           {data.allMarkdownRemark.nodes.map(node => (
             <li>
               <a href={node.fields.slug}>{node.frontmatter.title}</a>
