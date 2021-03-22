@@ -322,18 +322,20 @@ pre code {
 
 .footer-wrapper {
   background-color: $back-colour-dark;
-  padding: 3rem 3rem 2rem 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .media-icons-wrapper {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
+  max-width: 480px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .media-icon {
   color: white;
-  margin-left: 3rem;
-  margin-right: 3rem;
   &:hover {
     color: $accent-colour;
   }
@@ -374,4 +376,11 @@ pre code {
 .justified-text {
   text-align: justify;
   text-justify: auto;
+}
+
+.container {
+  max-width: $max-container-width;
+  margin: 2rem auto 4rem auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }

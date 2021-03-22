@@ -76,10 +76,7 @@ class Layout extends React.Component {
                   </div>
                   <div className="footer-other">
                     <p>liamdalg99@gmail.com</p>
-                    <p>
-                      © 2019 Liam Dalgarno | Made with GatsbyJS and Github
-                      Pages.
-                    </p>
+                    <p>Liam Dalgarno | Made with GatsbyJS and Github Pages.</p>
                   </div>
                 </div>
               </footer>
