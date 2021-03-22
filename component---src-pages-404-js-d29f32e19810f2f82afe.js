@@ -1,0 +1,2 @@
+(self.webpackChunkliamdalg_co_uk=self.webpackChunkliamdalg_co_uk||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var l=n(7294),a=n(810),u=n(3751),r=l.createElement("div",{className:"err-splash absolute-centered"},l.createElement("h1",null,"Whoops!"),l.createElement("h3",null,"404: Route not found."));t.default=function(){return l.createElement(a.Z,{banner:r,bannerHeight:"100vh"},l.createElement(u.Z,{title:"404: Not found"}))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-d29f32e19810f2f82afe.js.map

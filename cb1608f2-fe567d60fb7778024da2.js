@@ -1,0 +1,3 @@
+/*! For license information please see cb1608f2-fe567d60fb7778024da2.js.LICENSE.txt */
+(self.webpackChunkliamdalg_co_uk=self.webpackChunkliamdalg_co_uk||[]).push([[523],{8014:function(c,a,i){"use strict";i.d(a,{xiG:function(){return n}});var n={prefix:"fas",iconName:"bars",icon:[448,512,[],"f0c9","M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"]}}}]);
+//# sourceMappingURL=cb1608f2-fe567d60fb7778024da2.js.map
