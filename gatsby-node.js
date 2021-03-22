@@ -28,20 +28,12 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
-  if (node.internal.type === 'File') {
+  if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode });
     createNodeField({
       node: node,
       name: `slug`,
       value: slug,
-    });
-  } else if (node.internal.type === `MarkdownRemark`) {
-    const fileNode = getNode(node.parent);
-    // const slug = createFilePath({ node, getNode, basePath: `posts` });
-    createNodeField({
-      node: node,
-      name: `slug`,
-      value: fileNode.fields.slug,
     });
   }
 };

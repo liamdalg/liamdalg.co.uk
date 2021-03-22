@@ -6,7 +6,7 @@ import '../styles/index.scss';
 import SEO from '../components/seo';
 
 export const query = graphql`
-  query MyQuery {
+  query {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       nodes {
         fields {
