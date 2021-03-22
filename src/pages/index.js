@@ -40,12 +40,12 @@ const IndexPage = ({ data }) => {
         <div className="container-body justified-text spaced-text">
           <div className="grid-1-2">
             <StaticImage
-              className="inline-image"
+              className="picture-of-me"
               src="../images/me.png"
               alt="A picture of me at MVBall 2019"
               placeholder="blurred"
             />
-            <p>
+            <p className="grid-stretch">
               Hey, I'm Liam. I'm a fourth year student at the University of
               Bristol studying Computer Science. I'm interested in pretty much
               anything related to Mathematics, Computer Science, and Physics...
