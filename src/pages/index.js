@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 
 import Layout from '../components/layout';
 import '../styles/index.scss';
@@ -37,19 +38,26 @@ const IndexPage = ({ data }) => {
       <div className="container">
         <h1 className="container-title">About Me</h1>
         <div className="container-body justified-text spaced-text">
-          <p>
-            Hey, I'm Liam. I'm a fourth year student at the University of
-            Bristol studying Computer Science. I'm interested in a pretty much
-            anything related to Mathematics, Computer Science, and Physics...
-            but especially quantum computation, machine learning, and cyber
-            security. I also like Team Fortress 2, photography, guitar, and
-            Joywave.
-          </p>
-          <p>
-            I originally made this website with the intention of writing about
-            programming and things I find interesting. Well, two years later and
-            it's still not done, but I get closer every few months!
-          </p>
+          <div className="grid-1-2">
+            <StaticImage
+              className="inline-image"
+              src="../images/me.png"
+              alt="A picture of me at MVBall 2019"
+              placeholder="blurred"
+            />
+            <p>
+              Hey, I'm Liam. I'm a fourth year student at the University of
+              Bristol studying Computer Science. I'm interested in pretty much
+              anything related to Mathematics, Computer Science, and Physics...
+              but especially quantum computation, machine learning, and cyber
+              security. I also like Team Fortress 2, photography, guitar, and
+              Joywave. I originally made this website with the intention of
+              writing about programming and things I find interesting. Well, two
+              years later and it's still not done, but I get closer every few
+              months!
+            </p>
+          </div>
+          <p></p>
           <strong>
             I'm currently searching for internships & research positions related
             to quantum computation. If you've somehow found your way here and
