@@ -6,7 +6,7 @@ layout: about
 ---
 
 Hey. I'm Liam. I'm a Software Engineer at [Netcraft](https://netcraft.com) working on phishing classification. I'm
-your stereotypical Software Engineer who loves bouldering and making cocktails (I make a mean espresso martini
+your stereotypical nerd who loves bouldering, video games, and making cocktails (I make a mean espresso martini
 and daiquiri!)
 
 Dev facts:
