@@ -86,12 +86,12 @@ name = "github"
 url = "https://github.com/liamdalg"
 
 [[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com"
+name = "linkedin"
+url = "https://linkedin.com/in/liamdalg"
 
 [[params.socialIcons]]
-name = "Rss"
-url = "index.xml"
+name = "hackthebox"
+url = "https://app.hackthebox.com/users/27194"
 
 [tableOfContents]
 startLevel = 2  # ToC starts from H2
