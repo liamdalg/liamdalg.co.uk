@@ -63,13 +63,18 @@
 
         lamp.addEventListener("click", () => toggleTheme());
 
+        const updateBlur = e => {
+            const areas = document.querySelectorAll(".wrapper");
+            if (e.checked) {
+                areas.forEach(a => a.classList.add("blurry"));
+                return;
+            }
+            areas.forEach(a => a.classList.remove("blurry"));
+        };
+
         // Blur the content when the menu is open
         const cbox = document.getElementById("menu-trigger");
-
-        cbox.addEventListener("change", function () {
-            const area = document.querySelector(".wrapper");
-            if (this.checked) return area.classList.add("blurry");
-            area.classList.remove("blurry");
-        });
+        cbox.addEventListener("change", e => updateBlur(e.target));
+        updateBlur(cbox);
     });
 })();
