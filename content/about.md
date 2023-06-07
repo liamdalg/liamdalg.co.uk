@@ -12,6 +12,6 @@ and daiquiri!)
 Dev facts:
 * I'm particularly interested in cybersecurity and mathematics; currently trying to get good at Hack The Box and
   reverse engineering.
-* My favourite languages to use are C# and Go, but I really wish I was good at Rust and Haskell instead.
+* My favourite languages to use are C#, TypeScript, and Go, but I really wish I was good at Rust and Haskell instead.
 * Against my will I've become pretty good at `Node.js`.
 * I hate Perl.
