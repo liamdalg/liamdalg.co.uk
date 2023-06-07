@@ -1,11 +1,6 @@
-# liamdalg.co.uk
+# liamdalg
 
-Built with GatsbyJS. Currently under construction! 
+My third try at a personal site. Still probably under construction.
 
-```
-                                  .-.
-     (___________________________()6 `-,
-     (   ______________________   /''"`
-     //\\                      //\\
-     "" ""                     "" ""
-```
+Big thanks to [hugo-blog-awesome](https://github.com/hugo-sid/hugo-blog-awesome/) for the theme. I've only added some
+minor adjustments.
