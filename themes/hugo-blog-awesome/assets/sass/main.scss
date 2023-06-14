@@ -17,7 +17,7 @@ $gray: #6b7886;
 $white: #fff;
 
 //////////////// 2. Dark Colors /////////////////
-$dark-text-base-color: #babdc4;
+$dark-text-base-color: #c9ccd4;
 $dark-text-link-blue: #77a8fd;
 $dark-text-link-blue-active: #5292ff;
 $dark-bloquote-border: #4a4d56;
@@ -36,7 +36,7 @@ $dark-gray: #767f87;
 
 //////////////// 3. Fonts preferences /////////////////
 $sans-family: Roboto, sans-serif;
-$mono-family: Consolas, monospace;
+$mono-family: JetBrains Mono, Consolas, monospace;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
@@ -49,8 +49,8 @@ $bold-weight: 700;
 // $black-weight: 900; // uncomment if necessary
 
 //////////////// 4.Responsive design (media queries) /////////////////
-$wide-size: 890px;
-$narrow-size: 720px;
+$wide-size: 1000px;
+$narrow-size: 880px;
 
 // Padding unit
 $spacing-full: 30px;

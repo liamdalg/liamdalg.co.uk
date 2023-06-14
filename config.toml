@@ -10,7 +10,7 @@ theme = "hugo-blog-awesome"
 defaultContentLanguage = "en-gb"
 
 # Enable emojis globally
-enableEmoji = true
+enableEmoji = false
 ignoreErrors = [
   "additional-script-loading-error",
 ] # ignore error of loading additional scripts.
