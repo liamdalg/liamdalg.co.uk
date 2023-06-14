@@ -23,6 +23,8 @@ disqusShortname = ''
 [markup]
 [markup.highlight]
 noClasses = false
+lineNos = true
+lineNumbersInTable = false
 [markup.goldmark.renderer]
 unsafe = true
 
