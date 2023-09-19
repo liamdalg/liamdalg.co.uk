@@ -5,13 +5,13 @@ type: page
 layout: about
 ---
 
-Hey. I'm Liam. I'm a Software Engineer at [Netcraft](https://netcraft.com) working on phishing classification. I'm
-your stereotypical nerd who loves bouldering, video games, and making cocktails (I make a mean espresso martini
-and daiquiri!)
+Hey. I'm Liam. I'm a Software Engineer at [Netcraft](https://netcraft.com) working on automated phishing classification.
+I'm a stereotypical nerd who loves bouldering, video games, and making cocktails. I've been trying to keep up with
+writing a blog for around 5 years now — as you can see it's going well!
 
-Dev facts:
-* I'm particularly interested in cybersecurity and mathematics; currently trying to get good at Hack The Box and
-  reverse engineering.
-* My favourite languages to use are C#, TypeScript, and Go, but I really wish I was good at Rust and Haskell instead.
-* Against my will I've become pretty good at `Node.js`.
+* Trying to get good at Hack The Box and reverse engineering.
+* Favourite languages I wish I used: Rust and Haskell.
+* Favourite languages I actually use: C#, TypeScript, and Go.
+* KDE + Visual Studio Code stan.
+* Against my will I've become pretty good at Node.js.
 * I hate Perl.

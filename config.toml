@@ -68,7 +68,7 @@ avatar = "avatar.jpg" # put the file in assets folder; also ensure that image ha
 # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
 intro = "Liam Dalgarno"
 name = "Liam Dalgarno"
-description = "Dev. Procrastinator. Complainer."
+description = "Pencil-pusher with the pencil-pusher blues."
 
 # Allow to override webmanifest options
 [params.webmanifest]
