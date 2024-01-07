@@ -66,8 +66,8 @@ additionalScripts = ['js/custom.js', 'js/custom-2.js']
 [params.author]
 avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
 # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
-intro = "Liam Dalgarno"
-name = "Liam Dalgarno"
+intro = "liamdalg"
+name = "Liam"
 description = "Pencil-pusher with the pencil-pusher blues."
 
 # Allow to override webmanifest options
