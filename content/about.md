@@ -1,10 +1,13 @@
 ---
 title: "About"
-date: 2023-06-07T00:55:36+01:00
 type: page
 layout: about
 ---
 
-Hey, I'm Liam, a software engineer who likes software security and browser automation. I'm also
-trying to get good at Hack The Box and reverse engineering. I've yet to write an actual blog post
-that I'm proud enough of to pull out of drafts.
+Hey, I'm Liam, a software engineer who likes software security and browser
+automation. I dabble mostly in Golang, Kubernetes, and Typescript/NodeJS. I'd
+love to spend time getting better at C++ and Rust, but haven't found the
+project.
+
+Sorry, my blog is a Hugo SPA as frontend isn't my favourite. Someday I'll move
+it over to minimal HTML with no JS :)
