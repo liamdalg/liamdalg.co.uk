@@ -9,6 +9,9 @@ theme = "hugo-blog-awesome"
 # This defines how dates are formatted
 defaultContentLanguage = "en-gb"
 
+# Preserve tag/section casing as written instead of Hugo's default AP-style title-casing
+titleCaseStyle = "none"
+
 # Enable emojis globally
 enableEmoji = false
 ignoreErrors = [

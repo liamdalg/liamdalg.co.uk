@@ -1,6 +1,7 @@
 ---
 title: "V8 Stack Traces"
 date: 2025-09-21
+tags: ["chromium", "javascript"]
 ---
 
 Recently I've been playing around with errors and stack traces in Chromium.
