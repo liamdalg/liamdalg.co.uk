@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="wrapper">
+    {{ with .Site.Params.author }}
+    {{ with .description }}<p class="intro">{{ . }}</p>{{ end }}
+    {{ end }}
+
+    <h2>Recent Posts</h2>
+    {{ $posts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+    {{ range first 5 $posts.ByDate.Reverse }}
+    {{ partial "postCard.html" . }}
+    {{ end }}
+    {{ if gt (len $posts) 5 }}
+    {{ range first 1 (where .Site.Sections "Section" "in" .Site.Params.mainSections) }}
+    <p><a href="{{ .Permalink }}">See all posts &rarr;</a></p>
+    {{ end }}
+    {{ end }}
+
+    {{ with .Site.Taxonomies.tags }}
+    <h2>Tags</h2>
+    <div class="tags">
+        {{ range $term, $pages := . }}
+        <a class="tag" href="{{ "/tags/" | relLangURL }}{{ $term | urlize }}/">{{ $term }} ({{ len $pages }})</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</main>
+{{ end }}

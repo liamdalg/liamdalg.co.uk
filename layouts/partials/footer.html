@@ -1,0 +1,10 @@
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="social-links">
+            {{ range .Site.Params.socialIcons }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+            {{ end }}
+        </div>
+        <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author.name }}</p>
+    </div>
+</footer>

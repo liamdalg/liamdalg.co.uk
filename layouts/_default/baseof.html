@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{- partial "head.html" . -}}
+<body>
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{ end -}}
+    {{- partial "footer.html" . -}}
+    <script src="{{ "js/theme.js" | relURL }}" defer></script>
+</body>
+</html>

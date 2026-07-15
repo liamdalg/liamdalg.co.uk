@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main class="wrapper">
+    <h1>{{ .Title }}</h1>
+    {{ range .Pages.ByDate.Reverse }}
+    {{ partial "postCard.html" . }}
+    {{ end }}
+</main>
+{{ end }}
