@@ -1,6 +1,10 @@
 title = "liamdalg"
 baseURL = 'https://liamdalg.co.uk/'
 
+# Tags are shown on the home page instead; drop the standalone /tags/ index
+# page (individual /tags/<tag>/ pages are unaffected, kind "term" not "taxonomy")
+disableKinds = ["taxonomy"]
+
 # This is what goes in <html lang="">
 locale = 'en-gb'
 
