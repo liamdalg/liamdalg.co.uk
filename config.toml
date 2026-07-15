@@ -2,7 +2,7 @@ title = "liamdalg"
 baseURL = 'https://liamdalg.co.uk/'
 
 # This is what goes in <html lang="">
-languageCode = 'en-gb'
+locale = 'en-gb'
 
 # This defines how dates are formatted
 defaultContentLanguage = "en-gb"
@@ -12,10 +12,6 @@ titleCaseStyle = "none"
 
 # Enable emojis globally
 enableEmoji = true
-
-# To enable Disqus comments, provide Disqus Shortname below.
-# To disable Disqus comments, simply leave the field empty or remove the next line
-disqusShortname = ''
 
 # set markup.highlight.noClasses=false to enable code highlight
 [markup]
@@ -42,7 +38,6 @@ url = '/about/'
 weight = 30
 
 [params]
-defaultColor = "auto" # set color mode: dark, light, auto
 description = "liamdalg - Personal lazy blog"
 mainSections = ['posts']
 
