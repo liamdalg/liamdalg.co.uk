@@ -118,6 +118,8 @@ main.wrapper .intro {
 }
 
 #theme-toggle {
+    display: flex;
+    padding: 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -127,6 +129,14 @@ main.wrapper .intro {
 
 #theme-toggle:hover {
     color: var(--accent);
+}
+
+.theme-toggle-fill {
+    transition: transform 0.25s ease;
+}
+
+html.dark .theme-toggle-fill {
+    transform: translateX(9px);
 }
 
 /* Post list */

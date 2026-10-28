@@ -6,6 +6,16 @@
             <li><a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}aria-current="page"{{ end }}>{{ .Name }}</a></li>
             {{ end }}
         </ul>
-        <button id="theme-toggle" aria-label="Toggle dark/light theme">◐</button>
+        <button id="theme-toggle" aria-label="Toggle dark/light theme">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true">
+                <clipPath id="theme-toggle-clip">
+                    <circle cx="12" cy="12" r="9"/>
+                </clipPath>
+                <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                <g clip-path="url(#theme-toggle-clip)">
+                    <rect class="theme-toggle-fill" x="3" y="3" width="9" height="18" fill="currentColor"/>
+                </g>
+            </svg>
+        </button>
     </nav>
 </header>
